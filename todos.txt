@@ -1,0 +1,5 @@
+montar bike
+descolar
+desmontar
+bye a bike
+fix the bike
