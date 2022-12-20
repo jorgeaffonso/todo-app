@@ -3,3 +3,5 @@ descolar
 desmontar
 bye a bike
 fix the bike
+Master Python!
+Lavar a Bike
