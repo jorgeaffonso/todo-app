@@ -1,8 +1,11 @@
 import time
-
 import functions
 import PySimpleGUI as sg
+import os
 
+if not os.path.exists('todos.txt'):
+    with open('todos.txt', 'w') as file:
+        pass
 
 sg.theme("Black")
 clock = sg.Text('', key='clock')
@@ -21,7 +24,7 @@ window = sg.Window("My To-Do App",
                            [label], [input_box, add_button],
                            [list_box, edit_button, complete_button],
                            [exit_button]],
-                   font=("Helvetica", 20))
+                   font=("Helvetica", 15))
 
 while True:
     event,value = window.read(timeout=200)  # show the window and wait a action. The return is a tuple
